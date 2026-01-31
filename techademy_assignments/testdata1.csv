@@ -1,0 +1,4 @@
+username,password,expected
+Admin,admin123,Pass
+TestUser,wrongpass,Fail
+Guest,guest123,Pass
