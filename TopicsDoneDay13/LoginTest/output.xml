@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.10.11 on win32)" generated="2026-01-29T14:08:47.861415" rpa="false" schemaversion="5">
+<suite id="s1" name="TestSuite" source="D:\Wipro Training\TrainingDay12\TopicsDoneDay12\LoginTest\TestSuite.robot">
+<test id="s1-t1" name="Login User with Password" line="7">
+<kw name="Connect to Server" owner="keywords">
+<kw name="Connect" owner="CustomLibrary">
+<msg time="2026-01-29T14:08:47.934480" level="INFO">Connected to server 127.0.0.1</msg>
+<arg>127.0.0.1</arg>
+<status status="PASS" start="2026-01-29T14:08:47.934480" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-01-29T14:08:47.934480" elapsed="0.000000"/>
+</kw>
+<kw name="Login User" owner="keywords">
+<kw name="Login User Keyword" owner="CustomLibrary">
+<arg>${login}</arg>
+<arg>${password}</arg>
+<doc>This keyword does login and raises error if password is wrong</doc>
+<status status="PASS" start="2026-01-29T14:08:47.937992" elapsed="0.000000"/>
+</kw>
+<arg>ironman</arg>
+<arg>1234567890</arg>
+<status status="PASS" start="2026-01-29T14:08:47.934480" elapsed="0.003512"/>
+</kw>
+<kw name="Verify Valid Login" owner="keywords">
+<kw name="Get Server Version" owner="CustomLibrary">
+<msg time="2026-01-29T14:08:47.941216" level="INFO">${version} = 1.0</msg>
+<var>${version}</var>
+<status status="PASS" start="2026-01-29T14:08:47.939835" elapsed="0.001381"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-29T14:08:47.942223" level="INFO">Length is 3.</msg>
+<arg>${version}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-29T14:08:47.941216" elapsed="0.001007"/>
+</kw>
+<kw name="Get User Name" owner="CustomLibrary">
+<msg time="2026-01-29T14:08:47.942223" level="INFO">${name} = Tony Stark</msg>
+<var>${name}</var>
+<status status="PASS" start="2026-01-29T14:08:47.942223" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${name}</arg>
+<arg>${exp_full_name}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-01-29T14:08:47.942223" elapsed="0.000000"/>
+</kw>
+<arg>Tony Stark</arg>
+<status status="PASS" start="2026-01-29T14:08:47.939029" elapsed="0.003194"/>
+</kw>
+<kw name="Close Server Connection" owner="keywords" type="TEARDOWN">
+<kw name="Disconnect" owner="CustomLibrary">
+<status status="PASS" start="2026-01-29T14:08:47.945735" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-01-29T14:08:47.942223" elapsed="0.003512"/>
+</kw>
+<tag>positive</tag>
+<status status="PASS" start="2026-01-29T14:08:47.931779" elapsed="0.013956"/>
+</test>
+<test id="s1-t2" name="Denied Login with Wrong Password" line="13">
+<kw name="Connect to Server" owner="keywords">
+<kw name="Connect" owner="CustomLibrary">
+<msg time="2026-01-29T14:08:47.951378" level="INFO">Connected to server 127.0.0.1</msg>
+<arg>127.0.0.1</arg>
+<status status="PASS" start="2026-01-29T14:08:47.949869" elapsed="0.001509"/>
+</kw>
+<status status="PASS" start="2026-01-29T14:08:47.949869" elapsed="0.001509"/>
+</kw>
+<kw name="Run Keyword And Expect Error" owner="BuiltIn">
+<kw name="Login User" owner="keywords">
+<kw name="Login User Keyword" owner="CustomLibrary">
+<msg time="2026-01-29T14:08:47.953413" level="FAIL">Invalid Password</msg>
+<arg>${login}</arg>
+<arg>${password}</arg>
+<doc>This keyword does login and raises error if password is wrong</doc>
+<status status="FAIL" start="2026-01-29T14:08:47.953413" elapsed="0.000000">Invalid Password</status>
+</kw>
+<arg>ironman</arg>
+<arg>123</arg>
+<status status="FAIL" start="2026-01-29T14:08:47.953413" elapsed="0.002248">Invalid Password</status>
+</kw>
+<arg>*Invalid Password</arg>
+<arg>Login User</arg>
+<arg>ironman</arg>
+<arg>123</arg>
+<doc>Runs the keyword and checks that the expected error occurred.</doc>
+<status status="PASS" start="2026-01-29T14:08:47.951378" elapsed="0.004283"/>
+</kw>
+<kw name="Close Server Connection" owner="keywords" type="TEARDOWN">
+<kw name="Disconnect" owner="CustomLibrary">
+<status status="PASS" start="2026-01-29T14:08:47.958168" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-01-29T14:08:47.955661" elapsed="0.002507"/>
+</kw>
+<tag>negative</tag>
+<status status="PASS" start="2026-01-29T14:08:47.947765" elapsed="0.010917"/>
+</test>
+<doc>A test suite for valid login.</doc>
+<status status="PASS" start="2026-01-29T14:08:47.870088" elapsed="0.090610"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">negative</stat>
+<stat pass="1" fail="0" skip="0">positive</stat>
+</tag>
+<suite>
+<stat name="TestSuite" id="s1" pass="2" fail="0" skip="0">TestSuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.10.11 on win32)" generated="2026-01-29T14:42:49.840912" rpa="false" schemaversion="5">
+<suite id="s1" name="TestSuite" source="D:\Wipro Training\TrainingDay12\TopicsDoneDay12\GreetingTest\TestSuite.robot">
+<test id="s1-t1" name="Simple Test Case" line="9">
+<kw name="Should Be Title Case" owner="String">
+<arg>Robot Framework</arg>
+<doc>Fails if given ``string`` is not title.</doc>
+<status status="PASS" start="2026-01-29T14:42:49.995876" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>Text123</arg>
+<arg>Text123</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-01-29T14:42:49.995876" elapsed="0.002011"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>5 + 5 == 10</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2026-01-29T14:42:49.997887" elapsed="0.001629"/>
+</kw>
+<doc>Shows some assertion keywords</doc>
+<status status="PASS" start="2026-01-29T14:42:49.990626" elapsed="0.008890"/>
+</test>
+<test id="s1-t2" name="Test with Keywords" line="16">
+<kw name="Store Text" owner="keywords">
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-01-29T14:42:50.012782" level="INFO">${stored_text} = </msg>
+<arg>${stored_text}</arg>
+<arg>${EMPTY}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-01-29T14:42:50.005035" elapsed="0.007747"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-29T14:42:50.015354" level="INFO">The text "Hail Our Robot" will be stored.</msg>
+<arg>The text "${text}" will be stored.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-29T14:42:50.012782" elapsed="0.002572"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-01-29T14:42:50.017363" level="INFO">${stored_text} = Hail Our Robot</msg>
+<arg>${stored_text}</arg>
+<arg>${text}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-01-29T14:42:50.015354" elapsed="0.003028"/>
+</kw>
+<arg>Hail Our Robot</arg>
+<status status="PASS" start="2026-01-29T14:42:50.003005" elapsed="0.015377"/>
+</kw>
+<kw name="Add Text To Stored Text" owner="keywords">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-29T14:42:50.021571" level="INFO">${full_text} = Hail Our Robot Overlords!</msg>
+<var>${full_text}</var>
+<arg>${stored_text} ${text}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-29T14:42:50.021571" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-29T14:42:50.024343" level="INFO">The resulting text is: Hail Our Robot Overlords!</msg>
+<arg>The resulting text is: ${full_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-29T14:42:50.021571" elapsed="0.002772"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-01-29T14:42:50.026678" level="INFO">${stored_text} = Hail Our Robot Overlords!</msg>
+<arg>${stored_text}</arg>
+<arg>${full_text}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-01-29T14:42:50.025300" elapsed="0.001378"/>
+</kw>
+<arg>Overlords!</arg>
+<status status="PASS" start="2026-01-29T14:42:50.019420" elapsed="0.007258"/>
+</kw>
+<kw name="Verify Stored Text Length" owner="keywords">
+<kw name="Length Should Be" owner="BuiltIn">
+<msg time="2026-01-29T14:42:50.030733" level="INFO">Length is 25.</msg>
+<arg>${stored_text}</arg>
+<arg>${expected_length}</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<status status="PASS" start="2026-01-29T14:42:50.028186" elapsed="0.002547"/>
+</kw>
+<arg>25</arg>
+<status status="PASS" start="2026-01-29T14:42:50.026678" elapsed="0.004055"/>
+</kw>
+<kw name="Get Stored Text" owner="keywords">
+<return>
+<value>${stored_text}</value>
+<status status="PASS" start="2026-01-29T14:42:50.040371" elapsed="0.001515"/>
+</return>
+<msg time="2026-01-29T14:42:50.047921" level="INFO">${current_text} = Hail Our Robot Overlords!</msg>
+<var>${current_text}</var>
+<status status="PASS" start="2026-01-29T14:42:50.030733" elapsed="0.017188"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${current_text}</arg>
+<arg>Hail Our Robot Overlords!</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-01-29T14:42:50.052759" elapsed="0.000744"/>
+</kw>
+<status status="PASS" start="2026-01-29T14:42:50.001472" elapsed="0.053549"/>
+</test>
+<test id="s1-t3" name="Test for Current Year" line="24">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2026-01-29T14:42:50.061722" level="INFO">${date} = 2026-01-29 14:42:50.061722</msg>
+<var>${date}</var>
+<arg>result_format=datetime</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2026-01-29T14:42:50.061722" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-29T14:42:50.066221" level="INFO">2026-01-29 14:42:50.061722</msg>
+<arg>${date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-29T14:42:50.061722" elapsed="0.007031"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${date.year} &gt;= 2022</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2026-01-29T14:42:50.075411" elapsed="0.010589"/>
+</kw>
+<doc>Checks if year is &gt;= 2022</doc>
+<status status="PASS" start="2026-01-29T14:42:50.055021" elapsed="0.032985"/>
+</test>
+<test id="s1-t4" name="Test Case Greeting" line="31">
+<kw name="Check Correct Greeting" owner="keywords">
+<if>
+<branch type="IF" condition="'${greeting}' == 'Hail Our Robot Overlords!'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nYou may proceed...</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-29T14:42:50.101829" elapsed="0.003826"/>
+</kw>
+<status status="PASS" start="2026-01-29T14:42:50.100418" elapsed="0.005237"/>
+</branch>
+<branch type="ELSE">
+<kw name="Fail" owner="BuiltIn">
+<arg>Sorry. But that was the wrong answer... Bye Bye...</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" start="2026-01-29T14:42:50.105655" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-29T14:42:50.105655" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2026-01-29T14:42:50.100418" elapsed="0.005237"/>
+</if>
+<arg>Hail Our Robot Overlords!</arg>
+<status status="PASS" start="2026-01-29T14:42:50.095056" elapsed="0.010599"/>
+</kw>
+<status status="PASS" start="2026-01-29T14:42:50.091041" elapsed="0.022192"/>
+</test>
+<doc>This .robot file is a suite.
+Keywords are imported from the resource file.</doc>
+<status status="PASS" start="2026-01-29T14:42:49.851968" elapsed="0.262193"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TestSuite" id="s1" pass="4" fail="0" skip="0">TestSuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
