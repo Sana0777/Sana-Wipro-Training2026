@@ -1,0 +1,563 @@
+{
+  "id": "e7288392-75f3-4542-b196-e946a61cafae",
+  "version": "2.0",
+  "name": "Project 1",
+  "url": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+  "tests": [{
+    "id": "c759b345-9674-4e08-89cd-577aa26e4848",
+    "name": "tc001",
+    "commands": [{
+      "id": "42d828e8-48b6-4f0e-8d3d-7889b952ce94",
+      "comment": "",
+      "command": "open",
+      "target": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "811aacb3-9e42-45e4-a3ae-ecccb4e515bc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x797",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "438ca934-b453-471d-94a9-afd8f3e15bab",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02000005-3648-4c3a-a643-e77dcad1a408",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Admin"
+    }, {
+      "id": "126ec8c0-81c5-4200-8a45-0ea38d46ece8",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7fb785c-44ef-4334-8dfe-90605e4be126",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [],
+      "value": "admin123"
+    }, {
+      "id": "c074e331-116e-4202-8c67-1e8aac516f8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.oxd-button",
+      "targets": [
+        ["css=.oxd-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2b5ed2d-c785-43f9-ba44-e4a51d3dde38",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.oxd-text--h6",
+      "targets": [
+        ["css=.oxd-text--h6", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/span/h6", "xpath:idRelative"],
+        ["xpath=//h6", "xpath:position"],
+        ["xpath=//h6[contains(.,'Dashboard')]", "xpath:innerText"]
+      ],
+      "value": "10000"
+    }]
+  }, {
+    "id": "38c4299c-4732-4df2-91f7-40a6af3cf1af",
+    "name": "Lab1",
+    "commands": [{
+      "id": "98c8534b-39be-4552-abb9-f54ef216c7ea",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0833036-7bc8-42ca-a0ff-fc6e77a13e18",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x797",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d01ac823-e6f2-446b-b8bc-48b91976b9db",
+      "comment": "",
+      "command": "click",
+      "target": "css=center:nth-child(1) > .gNO89b",
+      "targets": [
+        ["css=center:nth-child(1) > .gNO89b", "css:finder"],
+        ["xpath=(//input[@name='btnK'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/center/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74a5fed7-2d62-409d-a349-cfda988eb7cf",
+      "comment": "",
+      "command": "click",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a9693f0-5fef-4526-b650-a95d55751ea6",
+      "comment": "",
+      "command": "type",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "test methods"
+    }, {
+      "id": "1abcd912-909f-4afc-95a8-90605526a736",
+      "comment": "",
+      "command": "click",
+      "target": "css=center:nth-child(1) > .gNO89b",
+      "targets": [
+        ["css=center:nth-child(1) > .gNO89b", "css:finder"],
+        ["xpath=(//input[@name='btnK'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/center/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b21ae193-c09b-4691-9a11-781fb8dc39c0",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.Fzsovc:nth-child(4)",
+      "targets": [
+        ["css=.Fzsovc:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='_bJ6Bad2wGbPt4-EP66SZqQ8_15-header']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "07285a42-0c19-4815-b13f-86babc486b20",
+    "name": "Lab2",
+    "commands": [{
+      "id": "eaece733-bb18-425d-a228-2ba360061fae",
+      "comment": "",
+      "command": "open",
+      "target": "https://tutorialsninja.com/demo/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a042a174-7f8d-4e4c-b0d8-3b1e4d5c5477",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x797",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58a344c0-8154-4ac6-8c3a-fcd51f00531e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Desktops",
+      "targets": [
+        ["linkText=Desktops", "linkText"],
+        ["css=.dropdown:nth-child(1) > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Desktops')]", "xpath:link"],
+        ["xpath=//nav[@id='menu']/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://tutorialsninja.com/demo/index.php?route=product/category&path=20')]", "xpath:href"],
+        ["xpath=//nav/div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Desktops')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d15dbec8-eac8-4190-844f-5828364aca7b",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.product-thumb h4 a",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "5062a4dc-0fbc-4428-baeb-87131a977f10",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product-thumb h4 a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8cf12768-ee88-4485-a8d8-fc23043a614f",
+      "comment": "",
+      "command": "click",
+      "target": "id=button-cart",
+      "targets": [
+        ["id=button-cart", "id"],
+        ["css=#button-cart", "css:finder"],
+        ["xpath=//button[@id='button-cart']", "xpath:attributes"],
+        ["xpath=//div[@id='product']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2e95461-795c-463f-b0a1-c7d4723910aa",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,368)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ddd9f91-a3e7-400c-84df-456b6365487c",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.input-lg", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b18add3-5e48-44d8-ba4a-661421f6078c",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.input-lg", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "i phone"
+    }, {
+      "id": "231066b5-76c4-4b30-b244-a883f8a57e07",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-search",
+      "targets": [
+        ["css=.fa-search", "css:finder"],
+        ["xpath=//div[@id='search']/span/button/i", "xpath:idRelative"],
+        ["xpath=//span/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "aebcbb84-496b-4e4c-bd05-00d5d76715b9",
+    "name": "Lab3",
+    "commands": [{
+      "id": "486f4a5c-39a0-4af8-90f0-8acede3af819",
+      "comment": "",
+      "command": "open",
+      "target": "https://tutorialsninja.com/demo/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa07ba0e-e1b4-4f55-9653-983c07be5ece",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x797",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08e220a4-5469-4da1-8821-1c0c9a30e6dc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Desktops",
+      "targets": [
+        ["linkText=Desktops", "linkText"],
+        ["css=.dropdown:nth-child(1) > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Desktops')]", "xpath:link"],
+        ["xpath=//nav[@id='menu']/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://tutorialsninja.com/demo/index.php?route=product/category&path=20')]", "xpath:href"],
+        ["xpath=//nav/div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Desktops')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6deec8e8-ba77-4466-b9ae-24a58053a30b",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.product-thumb",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "787475fa-735c-4899-b025-19f8f3c6f5bd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mac (1)",
+      "targets": [
+        ["linkText=Mac (1)", "linkText"],
+        ["css=.open li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Mac (1)')]", "xpath:link"],
+        ["xpath=//nav[@id='menu']/div[2]/ul/li/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://tutorialsninja.com/demo/index.php?route=product/category&path=20_27')]", "xpath:href"],
+        ["xpath=//li/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mac (1)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ee1d8b8-0ae7-4667-bdb6-951d1d4d2889",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-sort",
+      "targets": [
+        ["id=input-sort", "id"],
+        ["css=#input-sort", "css:finder"],
+        ["xpath=//select[@id='input-sort']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4879764-1dfb-4da1-bf86-bc01fbd2dcbd",
+      "comment": "",
+      "command": "select",
+      "target": "id=input-sort",
+      "targets": [],
+      "value": "label=Name (A - Z)"
+    }, {
+      "id": "cc9ffbbf-b24e-4c1f-8ffc-31de163c0ffe",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//div[@id='content']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Mac')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "f5ad6645-f70b-46cc-8aca-839113afc6aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-group .fa-shopping-cart",
+      "targets": [
+        ["css=.button-group .fa-shopping-cart", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div/div/div[2]/div[2]/button/i", "xpath:idRelative"],
+        ["xpath=//div[2]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ff5bb08-c981-44ee-8eaa-561fd66915fc",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,192.8000030517578)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f476a648-a961-49ee-8d05-8c0e5c310559",
+    "name": "Lab4",
+    "commands": [{
+      "id": "55042491-2d7a-4fb3-a90d-6c28cf111980",
+      "comment": "",
+      "command": "open",
+      "target": "https://tutorialsninja.com/demo/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce344b85-abf2-4c19-ad2c-f674386957c4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b54da67-cf3f-4d37-a715-cbc67532bc8a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Desktops",
+      "targets": [
+        ["linkText=Desktops", "linkText"],
+        ["css=.dropdown:nth-child(1) > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Desktops')]", "xpath:link"],
+        ["xpath=//nav[@id='menu']/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://tutorialsninja.com/demo/index.php?route=product/category&path=20')]", "xpath:href"],
+        ["xpath=//nav/div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Desktops')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6be3010-a12a-4854-a339-684bead2ca02",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mac (1)",
+      "targets": [
+        ["linkText=Mac (1)", "linkText"],
+        ["css=.open li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Mac (1)')]", "xpath:link"],
+        ["xpath=//nav[@id='menu']/div[2]/ul/li/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://tutorialsninja.com/demo/index.php?route=product/category&path=20_27')]", "xpath:href"],
+        ["xpath=//li/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mac (1)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b4bac7f-cd8e-4754-853a-2dede2dd94a6",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//div[@id='content']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Mac')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c33f7a7-c53a-42e0-9576-e824e3b9e47e",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-sort",
+      "targets": [
+        ["id=input-sort", "id"],
+        ["css=#input-sort", "css:finder"],
+        ["xpath=//select[@id='input-sort']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6224282-7047-4bf2-8dd4-73bb7b972e0f",
+      "comment": "",
+      "command": "select",
+      "target": "id=input-sort",
+      "targets": [],
+      "value": "label=Name (A - Z)"
+    }, {
+      "id": "61a828bb-ef8c-448f-81fa-6fb8139deb49",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,171.1999969482422)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0432bcd2-87e2-4282-81d7-d1c008d46884",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-group .hidden-xs",
+      "targets": [
+        ["css=.button-group .hidden-xs", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div/div/div[2]/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84ac2742-713c-45cf-8e8c-5e740653c983",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,160)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3611640e-b782-43d2-8052-6523c0231612",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.input-lg", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5878a115-63d0-47d3-a787-d8fb4cd63925",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.input-lg", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "monitors"
+    }, {
+      "id": "f19c6265-f941-4be3-ad44-c56553b1d683",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-group-btn > .btn",
+      "targets": [
+        ["css=.input-group-btn > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='search']/span/button", "xpath:idRelative"],
+        ["xpath=//span/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef16b473-68a8-42fd-97c3-a85620916703",
+      "comment": "",
+      "command": "click",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["name=description", "name"],
+        ["css=#description", "css:finder"],
+        ["xpath=//input[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/p/label/input", "xpath:idRelative"],
+        ["xpath=//p/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2bbb71e-38e3-4d5b-8d0e-8a0b47b72d67",
+      "comment": "",
+      "command": "click",
+      "target": "id=button-search",
+      "targets": [
+        ["id=button-search", "id"],
+        ["css=#button-search", "css:finder"],
+        ["xpath=//input[@id='button-search']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bd9124b5-54b5-4e52-9884-c549873e858f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c759b345-9674-4e08-89cd-577aa26e4848"]
+  }],
+  "urls": ["https://opensource-demo.orangehrmlive.com/web/index.php/auth/login", "https://www.google.com/", "https://tutorialsninja.com/demo/"],
+  "plugins": []
+}
