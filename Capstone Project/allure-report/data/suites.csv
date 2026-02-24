@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","43747","test_full_flow[User_3]","Selenium_Pytest.tests","2026-02-24","passed","2026-02-24","","test_full_flow","",""
+"","39514","test_full_flow[User_1]","Selenium_Pytest.tests","2026-02-24","passed","2026-02-24","","test_full_flow","",""
+"","38457","test_full_flow[User_4]","Selenium_Pytest.tests","2026-02-24","passed","2026-02-24","","test_full_flow","",""
+"","33683","test_full_flow[User_2]","Selenium_Pytest.tests","2026-02-24","passed","2026-02-24","","test_full_flow","",""
+"","35330","test_full_flow[User_5]","Selenium_Pytest.tests","2026-02-24","passed","2026-02-24","","test_full_flow","",""

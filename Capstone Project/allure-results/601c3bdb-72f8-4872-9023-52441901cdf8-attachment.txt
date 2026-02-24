@@ -1,0 +1,1 @@
+[33mWARNING [0m pages.registration_page:registration_page.py:69 Email already registered: rohit99@mailtest.com — skipping to login
